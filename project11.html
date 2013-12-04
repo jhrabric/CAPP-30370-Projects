@@ -1,0 +1,69 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project 11">
+  <title>Project 11</title>
+  <style>
+.photo1 {
+display:inline-block;
+  margin:2em;
+  width:250px;
+  height:250px;
+  transition:all 1s ease;
+ }
+ .photo1:hover{
+	 -webkit-transform:rotate(180deg);
+}
+.photo2:hover{
+-webkit-transform:scale(2,2);
+}
+.photo3:hover{
+-webkit-transform:skewx(45deg);
+}
+.box {
+  width:300px;
+  height:300px;
+  background-color:orange;
+  box-shadow:0 0 8px 8px rgba(0,0,0,0);
+  transition:all 0.5s ease-in-out;
+ }
+  
+.box:hover{
+	background-color: black;
+	width: 400px;
+	height: 400px;
+	box-shadow:0 0 10px 10px #FF8C00;
+}
+.box2 {width:300px;
+  height:300px;
+  background-color:blue;
+  box-shadow:0 0 8px 8px rgba(0,0,0,0);
+  transition:all 0.5s ease-in-out;
+ }
+.box2:hover{
+	-webkit-transform-origin:top right;
+	-webkit-transform:rotate(25deg);
+	-webkit-transform:scale(1.05);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div>
+<img class="photo1" src="salad.jpg" alt="A Salad">
+</div>
+<div>
+<img class="photo2" src="steak.jpg" alt="A Salad">
+</div>
+<div>
+<img class="photo3" src="icecream.jpg" alt="A Salad">
+</div>
+<div class="box"></div>
+<div class="box2"></div>
+</body>
+
+</html>
